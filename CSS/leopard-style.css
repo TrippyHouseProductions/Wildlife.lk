@@ -1,0 +1,77 @@
+#leopard-header {
+  background-image: url(../IMAGES/leopard-images/leopard-background3.webp);
+}
+
+#zoo {
+  background-image: url(../IMAGES/leopard-images/leopard-background2.webp);
+  margin: 0;
+}
+
+/*Venues styling starts*/
+.venue {
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.37);
+  margin: 80px auto;
+  width: 60%;
+}
+
+.venue img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.venue img:hover {
+  transform: none;
+}
+
+/*.venue p,
+h4 {
+  color: whitesmoke;
+}*/
+
+.venue h4,
+p {
+  text-align: center;
+}
+
+/*Threats styling starts*/
+#habitat h4,
+#trade h4 {
+  text-align: center;
+}
+
+#habitat h4,
+#trade h4,
+#threats h1 {
+  color: whitesmoke;
+}
+
+#habitat p {
+  color: whitesmoke;
+}
+
+#threats p {
+  color: whitesmoke;
+}
+
+#threats {
+  padding: 20px;
+  width: 100%;
+  /*background-color: #021116;*/
+  background-color: #021116;
+  margin: 0;
+
+  background-color: #021116;
+  opacity: 0.8;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #021116 10px
+    ),
+    repeating-linear-gradient(#02111655, #555f0b);
+}

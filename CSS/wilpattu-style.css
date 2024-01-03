@@ -1,0 +1,54 @@
+.wilpattu-header {
+  background-image: url(../IMAGES/wilpattu-images/wilpattu-background.webp);
+}
+
+.container p {
+  color: whitesmoke;
+  padding: 40px;
+}
+
+.container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-areas: "content-1 content-2 content-3";
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+#content-1 {
+  background-color: #3a3a3bb9;
+  grid-area: content-1;
+  border-radius: 15px;
+  padding-top: 15px;
+}
+
+#content-2 {
+  background-color: #3a3a3bb9;
+  grid-area: content-2;
+  border-radius: 15px;
+  padding-top: 15px;
+}
+
+#content-3 {
+  background-color: #3a3a3bb9;
+  grid-area: content-3;
+  border-radius: 15px;
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "content-1"
+      "content-2"
+      "content-3";
+    grid-gap: 0.5rem;
+  }
+
+  h4 {
+    margin: 0 auto;
+    font-size: 6vmin;
+  }
+}

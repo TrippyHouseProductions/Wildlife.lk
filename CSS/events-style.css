@@ -1,0 +1,280 @@
+/*Grids are given diffrernt colors for easy Identification*/
+/*This is used to define variables and later on you can use variables without defining it again*/
+:root {
+  --main-radius: 15px;
+  --main-padding: 5px;
+}
+
+#grid-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content-1 content-2 content-3"
+    "content-4 content-4 content-4 content-4"
+    "footer footer footer footer";
+  text-align: center;
+}
+
+#title,
+#title2 {
+  margin-top: 5vh;
+  width: 80%;
+  margin: 40px auto;
+}
+
+/*section {
+  width: 100%;
+  margin: 0;
+}*/
+
+nav {
+  height: 11vh;
+  grid-area: nav;
+}
+
+main {
+  margin-top: 11vh;
+  height: 100vh;
+  background-color: rgba(127, 255, 212, 0);
+  grid-area: main;
+  padding-top: var(--main-padding);
+}
+
+/*alll contents common styling*/
+.content {
+  height: 50vh;
+  padding-top: var(--main-padding);
+}
+
+#sidebar {
+  margin-top: 11vh;
+  background-color: #262626;
+  grid-area: sidebar;
+  padding-top: var(--main-padding);
+}
+
+#content-1 {
+  background-color: crimson;
+  grid-area: content-1;
+}
+
+#content-2 {
+  background-color: greenyellow;
+  grid-area: content-2;
+}
+
+#content-3 {
+  background-color: chartreuse;
+  grid-area: content-3;
+}
+
+#content-4 {
+  height: 110vh;
+  /*background-color: cadetblue;*/
+  grid-area: content-4;
+}
+
+footer {
+  grid-area: footer;
+  height: auto;
+}
+/*upcoming events related stuff*/
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "image-1 acontent-1"
+    "image-2 acontent-2";
+  grid-gap: 0.2rem;
+  text-align: center;
+  height: 55%;
+  width: 75%;
+  margin: 0px auto;
+}
+
+article img:hover {
+  transform: none;
+}
+
+#acontent-1 {
+  grid-area: acontent-1;
+  background-color: brown;
+}
+
+#acontent-2 {
+  grid-area: acontent-2;
+  background-color: blue;
+}
+
+#image-1 {
+  grid-area: image-1;
+  background-color: rebeccapurple;
+}
+
+#image-2 {
+  grid-area: image-2;
+  background-color: burlywood;
+}
+
+/*upcoming conservations related stuff*/
+
+.concontainer {
+  width: 90vw;
+  height: 70vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "con-content-1 con-content-2 con-content-3 con-content-4";
+  grid-gap: 0.2rem;
+  text-align: center;
+}
+
+.concontainer-list li {
+  color: whitesmoke;
+  padding: 1vh auto;
+  margin: 2vh;
+  font-size: 1rem;
+}
+
+.concontainer-h4 {
+  padding: 0 2vw;
+  color: whitesmoke;
+}
+
+/*all con-contents common styling*/
+.concontents {
+  border-radius: var(--main-radius);
+  background-color: #3a3a3bb9;
+}
+
+/*alll con-contents unique styling*/
+#con-content-1 {
+  grid-area: con-content-1;
+}
+
+#con-content-2 {
+  grid-area: con-content-2;
+}
+
+#con-content-3 {
+  grid-area: con-content-3;
+}
+
+#con-content-4 {
+  grid-area: con-content-4;
+}
+
+/*date container styling*/
+/*date container common styling*/
+.datecontainer {
+  background-color: #262626;
+  padding: 10px;
+  border-top-right-radius: var(--main-radius);
+  border-top-left-radius: var(--main-radius);
+}
+
+.datecontainer h4 {
+  margin: 0 auto;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.datecontainer h3 {
+  margin: 5px auto;
+  font-family: "Bebas Neue", sans-serif;
+  color: #bacf16;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 850px) {
+  #grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "content-1"
+      "content-2"
+      "content-3"
+      "content-4"
+      "footer";
+  }
+
+  p {
+    padding: 1vh;
+  }
+
+  nav {
+    height: auto;
+  }
+
+  #sidebar {
+    margin-top: 13vh;
+    height: 10vh;
+  }
+  main {
+    margin-top: 0;
+    height: 145vh;
+  }
+  .content {
+    height: 33.3vh;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "image-1"
+      "acontent-1"
+      "image-2"
+      "acontent-2";
+    gap: 1rem;
+    height: 100vh;
+    width: 90vw;
+  }
+
+  #content-4 {
+    height: 215vh;
+  }
+
+  .concontainer {
+    width: 90vw;
+    height: 85vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "con-content-1"
+      "con-content-2"
+      "con-content-3"
+      "con-content-4";
+    grid-gap: 1rem;
+    text-align: center;
+  }
+
+  .datecontainer {
+    padding: 5px;
+  }
+
+  .datecontainer h4 {
+    font-size: 1.5rem;
+  }
+
+  .datecontainer h3 {
+    margin: 1px auto;
+    font-size: 1rem;
+  }
+
+  .concontainer-list li {
+    font-size: 0.8rem;
+  }
+}

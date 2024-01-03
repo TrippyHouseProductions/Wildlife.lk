@@ -1,0 +1,53 @@
+/*SMOOTH LOADING ANIMATION STARTS*/
+main {
+  animation: transitionIn 1s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*SMOOTH LOADING ANIMATION ENDS*/
+
+/*ANIMATIONS STARTS*/
+/*COMMON ANIMATIONS STARTS*/
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.ctn {
+  transition: transform 0.3s ease;
+}
+
+.ctn:hover {
+  transform: scale(1.1);
+  background: #bacf16;
+  color: #021116;
+}
+
+.nav-links li {
+  transition: 0.3s ease;
+}
+
+.nav-links li:hover {
+  transform: scale(1.2);
+}
+
+.social-icons img {
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+/*COMMON ANIMATION ENDS*/
