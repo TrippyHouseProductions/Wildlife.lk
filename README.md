@@ -17,7 +17,7 @@ Our mission is to raise awareness about the diverse flora and fauna of Sri Lanka
 Feel free to reach out to us for inquiries, collaborations, or any questions related to our conservation efforts.
 
 - **Email:** [hirushagunasena@gmail.com](mailto:hirushagunasena@gmail.com)
-- **Whatsapp:** [@Hirusha Gunasena](https://wa.me+94751229892)
+- **Whatsapp:** [@Hirusha Gunasena](https://wa.me/+94751229892)
 
 ## Copyright
 
