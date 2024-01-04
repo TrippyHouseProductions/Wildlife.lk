@@ -19,6 +19,6 @@ Feel free to reach out to us for inquiries, collaborations, or any questions rel
 
 ## Copyright
 
-© 2024 Sri Lankan Wildlife Conservation. All rights reserved. Unauthorized use and/or duplication of this material without express and written permission is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Sri Lankan Wildlife Conservation with appropriate and specific direction to the original content.
+© 2024 Hirusha Gunasena. All rights reserved. Unauthorized use and/or duplication of this material without express and written permission is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Sri Lankan Wildlife Conservation with appropriate and specific direction to the original content.
 
 ---
