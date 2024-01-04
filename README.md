@@ -2,9 +2,9 @@
 
 ---
 
-# Sri Lankan Wildlife Conservation 🦜🌿
+# Sri Lankan Wildlife Conservation
 
-Welcome to our Sri Lankan Wildlife Conservation project! We're passionate about preserving the rich biodiversity of Sri Lanka and protecting its unique wildlife habitats.
+Welcome to our Sri Lankan Wildlife Conservation Website project! We're passionate about preserving the rich biodiversity of Sri Lanka and protecting its unique wildlife habitats.
 
 ## About
 
