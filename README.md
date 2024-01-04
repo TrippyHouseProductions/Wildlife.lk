@@ -1,7 +1,5 @@
 # Wildlife.lk
 
-Certainly! Here's an example of how you might structure your README.md file for a Sri Lankan wildlife conservation webpage on GitHub:
-
 ---
 
 # Sri Lankan Wildlife Conservation 🦜🌿
