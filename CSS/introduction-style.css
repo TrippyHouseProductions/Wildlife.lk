@@ -1,0 +1,67 @@
+/* Global Styles */
+#intro-header {
+    /*background-color: #021116;*/
+    margin: 0;
+    background-color: #021116;
+    opacity: 0.8;
+    background-image: repeating-radial-gradient(circle at 0 0,
+            transparent 0,
+            #021116 10px),
+        repeating-linear-gradient(#02111655, #555f0b);
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #02111655;
+}
+
+th,
+td {
+    border: 1px solid #555f0b;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: whitesmoke;
+}
+
+tfoot {
+    font-style: italic;
+}
+
+.location img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.location h2 {
+    padding: 15px;
+    text-align: center;
+}
+
+iframe {
+    border-radius: 15px;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 850px) {
+
+    /* Add responsive styles here */
+    section .location img {
+        max-width: 100%;
+        height: auto;
+    }
+}

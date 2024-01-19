@@ -10,15 +10,33 @@
 
   background-color: #021116;
   opacity: 0.8;
-  background-image: repeating-radial-gradient(
-      circle at 0 0,
+  background-image: repeating-radial-gradient(circle at 0 0,
       transparent 0,
-      #021116 10px
-    ),
+      #021116 10px),
     repeating-linear-gradient(#02111655, #555f0b);
 }
 
 /*PROTECTED AREAS STYLING STARTS*/
+/* Gallery Styling Starts*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery-item {
+  margin: 1rem;
+  flex: 1 1 300px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Gallery Styling Ends*/
+
 .protected-areas {
   margin: 0% auto;
 }
@@ -70,10 +88,12 @@ iframe {
   position: relative;
   border: none;
 }
+
 /*PROTECTED AREAS STYLING ENDS*/
 /*DEPARTMENT PAGE STYLING ENDS*/
 
 @media only screen and (max-width: 850px) {
+
   /*About DWC rows and clos not related to index page rows and cols res*/
   .row {
     flex-direction: column;

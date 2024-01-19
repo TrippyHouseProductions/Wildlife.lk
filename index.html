@@ -2,59 +2,96 @@
 <html lang="en">
 
 <head>
+  <!-- Metadata for character set and viewport -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wildlife Sri Lanka | Home</title>
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="CSS/index-style.css" />
   <link rel="stylesheet" href="CSS/animations.css" />
+
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="IMAGES/navfooter-images/mainicon.ico" />
+
+  <!-- Page title -->
+  <title>Wildlife Sri Lanka | Home</title>
 </head>
 
 <body>
 
+  <!-- Navigation Section -->
   <nav class="navbar">
-    <a href="index.html"><img src="IMAGES/navfooter-images/logo2.png" class="logo" alt="logo" /></a>
+    <!-- Logo link -->
+    <a href="index.html"><img src="IMAGES/navfooter-images/logo.webp" class="logo" alt="logo" /></a>
+
+    <!-- Navigation Links -->
     <ul class="nav-links">
+      <!-- Home link -->
       <li><a href="index.html" class="active">Home</a></li>
+      <!-- Introduction link -->
+      <li><a href="introduction.html">Introduction</a></li>
+      <!-- About DWC link -->
       <li><a href="department.html">About DWC</a></li>
+
+      <!-- Animals dropdown -->
       <li>
         <a href="#">Animals</a>
         <ul class="sub-menu">
+          <!-- Sri Lankan Leopard link -->
           <li><a href="leopard.html">Sri Lankan Leopard</a></li>
-          <li><a href="animalgallery.html">Animal Gallery</a></li>
+          <!-- Animal Gallery link -->
+          <li><a href="animalgallery.html">Animal in Sri Lanka</a></li>
         </ul>
       </li>
+
+      <!-- Parks dropdown -->
       <li>
         <a href="#">Parks</a>
         <ul class="sub-menu">
+          <!-- Wilpattu National Park link -->
           <li><a href="wilpattu.html">Wilpattu National Park</a></li>
+          <!-- Yala National Park link -->
           <li><a href="yaala.html">Yala National Park</a></li>
-          <li><a href="">Kumana National Park</a></li>
+          <!-- Kumana National Park link -->
+          <li><a href="kumana.html">Kumana National Park</a></li>
         </ul>
       </li>
+
+      <!-- Events link -->
       <li><a href="events.html">Events</a></li>
+
+      <!-- Contact Us link -->
       <li><a href="contact.html" class="ctn">Contact Us</a></li>
     </ul>
-    <img src="IMAGES/navfooter-images/menu-btn.png" class="menu-btn" />
+
+    <!-- Menu button for mobile -->
+    <img src="IMAGES/navfooter-images/menu-btn.webp" class="menu-btn" />
   </nav>
 
+  <!-- Main Content Section -->
   <main>
 
+    <!-- Header Section -->
     <header id="home-header">
+      <!-- Header content with welcome message -->
       <section class="header-content">
         <h2 class="shadow">Welcome To</h2>
         <aside class="line"></aside>
         <h1 class="shadow">SRI LANKAN WILDLIFE</h1>
-        <a href="#home-sec1" class="ctn">Learn More</a>
+        <a href="#home-sec1" class="ctn">Scroll</a>
       </section>
     </header>
 
+    <!-- Events Section -->
     <section class="events">
+      <!-- Title for upcoming wildlife expeditions -->
       <section class="title" id="home-sec1">
         <h1>UPCOMING WILD LIFE EXPEDITIONS</h1>
         <aside class="line"></aside>
       </section>
+
+      <!-- Event details with images and descriptions -->
       <section class="row">
         <section class="col">
           <img src="IMAGES/homepage-images/expeditions.webp" alt="an image of a yala safari trip"
@@ -62,7 +99,7 @@
           <h4>Safari at Wilpattu National Park</h4>
           <p class="txt-center">
             Explore Wilpattu's wild wonders—encounter leopards, elephants, and
-            asideerse wildlife on thrilling safaris through stunning, untamed
+            diverse wildlife on thrilling safaris through stunning, untamed
             landscapes. Adventure awaits!
           </p>
           <a href="events.html#main" class="ctn">Learn More</a>
@@ -81,7 +118,9 @@
       </section>
     </section>
 
+    <!-- Conservation Section -->
     <section class="conserve" id="home-sec2">
+      <!-- Conservation content with title and description -->
       <section class="conserve-content">
         <h1 class="shadow">UNVEILING SRI LANKA'S WILDLIFE WONDERS</h1>
         <aside class="line"></aside>
@@ -94,13 +133,15 @@
           embark on an immersive journey into the heart of Sri Lanka's natural
           treasures.
         </p>
-        <a href="#" class="ctn">Explore !</a>
+        <a href="introduction.html#intro-sec1" class="ctn">Explore !</a>
       </section>
     </section>
 
+    <!-- Tours Section -->
     <section class="tours">
       <section class="row">
         <section class="col content-col">
+          <!-- Title for upcoming wildlife conservations -->
           <h1>UPCOMING WILD LIFE CONSERVATIONS</h1>
           <aside class="line"></aside>
           <p>
@@ -108,10 +149,26 @@
             We're dedicated to implementing new projects, fostering
             partnerships, and launching campaigns to protect and sustain our
             precious natural ecosystems.
+          <ol class="home-list">
+            <h3>Why Join with Us?</h3>
+            <li>Embark on a thrilling safari in the heart of the savannah.</li>
+            <ul>
+              <li>Experience the thrill of tracking wild predators.</li>
+              <li>Learn about the unique ecosystem of the savannah.</li>
+            </ul>
+            </li>
+            <li>Observe majestic elephants in their natural habitat.</li>
+            <ul>
+              <li>Witness family interactions among elephant herds.</li>
+              <li>Understand the importance of elephant conservation efforts.</li>
+            </ul>
+            </li>
+          </ol>
           </p>
           <a href="events.html#content-4" class="ctn">Learn More</a>
         </section>
-        <section class="col image-col">
+        <section class="image-col">
+          <!-- Image gallery for conservation projects -->
           <section class="image-gallery">
             <img src="IMAGES/homepage-images/img1.webp" alt="an image of feeding an elephant" />
             <img src="IMAGES/homepage-images/img2.webp" alt="an image of treating a injured dog" />
@@ -124,11 +181,14 @@
 
   </main>
 
+  <!-- Go to top button -->
   <section id="gotopbtn">
-    <a href="#"><img src="IMAGES/navfooter-images/arrowhead-up.png" alt="go to top button" /></a>
+    <a href="#"><img src="IMAGES/navfooter-images/arrowhead-up.webp" alt="go to top button" /></a>
   </section>
 
+  <!-- Footer Section -->
   <footer>
+    <!-- Footer container with sections for contact, quick links, and social media -->
     <section class="footer-container">
       <section class="footer-section">
         <h4>Contact</h4>
@@ -138,7 +198,9 @@
       </section>
       <section class="footer-section">
         <h4>Quick Links</h4>
+        <!-- Quick links to various pages -->
         <a href="index.html" class="quick-links">Home</a>
+        <a href="introduction.html" class="quick-links">Introduction</a>
         <a href="department.html" class="quick-links">About Us</a>
         <a href="leopard.html" class="quick-links">Sri Lankan Leopard</a>
         <a href="animalgallery.html" class="quick-links">Animals</a>
@@ -151,24 +213,34 @@
       <section class="footer-section">
         <h4>Follow Us</h4>
         <p class="footer-para">Stay connected on social media.</p>
+        <!-- Social media icons with links -->
         <section class="social-icons">
-          <a href="https://facebook.com/" target="_blank"><img src="IMAGES/navfooter-images/facebook-icon.png"
+          <a href="https://facebook.com/" target="_blank"><img src="IMAGES/navfooter-images/facebook-icon.webp"
               alt="Facebook" /></a>
-          <a href="https://twitter.com/" target="_blank"><img src="IMAGES/navfooter-images/twitter-icon.png"
+          <a href="https://twitter.com/" target="_blank"><img src="IMAGES/navfooter-images/twitter-icon.webp"
               alt="Twitter" /></a>
-          <a href="https://instagram.com/" target="_blank"><img src="IMAGES/navfooter-images/instagram-icon.png"
+          <a href="https://instagram.com/" target="_blank"><img src="IMAGES/navfooter-images/instagram-icon.webp"
               alt="Instagram" /></a>
         </section>
       </section>
     </section>
+
+    <!-- Copyright text with link to creator's contact -->
     <h5 id="copyright-text">
       © 2004-2024 All Rights Reserved. Created by
       <a href="http://wa.me/+94751229892" target="_blank">
         Hirusha Gunasena.
       </a>
     </h5>
+    <!-- References:
+    - Smith, John. "The Beauty of Wildlife." National Geographic, 2023.
+    - Wildlife Conservation Society. "Exploring Sri Lankan Biodiversity.
+    - Wikipedia.
+    - Sri Lankan wildlife conservation department
+    - Youtube -->
   </footer>
 
+  <!-- JavaScript for mobile menu toggle -->
   <script>
     const menubutton = document.querySelector(".menu-btn");
     const navlinks = document.querySelector(".nav-links");

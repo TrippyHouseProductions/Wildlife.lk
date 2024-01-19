@@ -8,15 +8,34 @@ main {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 /*SMOOTH LOADING ANIMATION ENDS*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 
 /*ANIMATIONS STARTS*/
 /*COMMON ANIMATIONS STARTS*/
+.header-content h2,
+.header-content h1 {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+
 img {
   transition: transform 0.3s ease;
 }
@@ -50,4 +69,5 @@ img:hover {
 .social-icons img:hover {
   transform: scale(1.2);
 }
+
 /*COMMON ANIMATION ENDS*/

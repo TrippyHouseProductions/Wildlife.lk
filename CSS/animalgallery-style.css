@@ -1,4 +1,69 @@
-/*ANIMAL GALLERY PAGE STYLING STARTS*/
+#endemic-animals-heading {
+  padding-top: 4%;
+}
+
+.endemic-animal-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  text-align: justify;
+}
+
+.endemic-animal-para {
+  margin-top: 0;
+}
+
+
+/*QUOTE STYLING STARTS*/
+.quote-section {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #555f0b;
+  background-color: #555f0b38;
+}
+
+blockquote p {
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+cite {
+  display: block;
+  font-size: 1rem;
+  color: #666565;
+}
+
+.related-links {
+  margin-top: 15px;
+}
+
+.related-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.related-links li {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.related-links a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #555f0b;
+  font-weight: bold;
+}
+
+.related-links a:hover {
+  text-decoration: underline;
+  color: #1c1c1c;
+  transition: 0.3s;
+}
+
+/*QUOTE STYLING ENDS*/
+/*ANIMAL GALLERY STYLING STARTS*/
 .overlay p {
   color: whitesmoke;
 }
@@ -57,7 +122,6 @@
   flex-direction: column;
   padding: 0 40px;
   text-align: center;
-  font-size: 14px;
   transition: height 0.5s;
 }
 
@@ -78,4 +142,41 @@
   height: 100%;
 }
 
-/*ANIMAL GALLERY PAGE STYLING ENDS*/
+/*ANIMAL GALLERY STYLING ENDS*/
+
+@media only screen and (min-width:1920px) {
+  .overlay p {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .overlay h3 {
+    margin-top: 15%;
+    font-size: 25px;
+  }
+
+}
+
+
+@media only screen and (max-width:850px) {
+  .endemic-animal-container {
+    flex-direction: column;
+  }
+
+  .endemic-animal-container p {
+    padding: 0;
+  }
+
+  .endemic-animal-para,
+  #gallery-heading {
+    margin-top: 5%;
+  }
+
+  blockquote p {
+    font-size: 1.5rem;
+  }
+
+  .related-links a {
+    font-size: 1rem;
+  }
+}

@@ -7,6 +7,47 @@
   margin: 0;
 }
 
+#leo-sec1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../IMAGES/leopard-images/background1.webp);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  padding-right: 40%;
+  padding-top: 8vh;
+}
+
+#leo-sec1 .title {
+  margin-top: 0;
+}
+
+#leo-sec1 p {
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+}
+
+#leo-sec1-facts {
+  margin-top: 5vh;
+  width: 72%;
+  padding: 5px;
+}
+
+#leo-sec1-facts table {
+  width: 100%;
+}
+
+#leo-sec1-facts td {
+  padding-bottom: 10px;
+}
+
+.tr {
+  font-size: 1.3rem;
+}
+
+
 /*Venues styling starts*/
 .venue {
   justify-content: center;
@@ -15,24 +56,17 @@
   background-color: whitesmoke;
   border-radius: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.37);
-  margin: 80px auto;
-  width: 60%;
+  width: 100%;
 }
 
 .venue img {
-  width: 100%;
+  width: 49.7%;
   border-radius: 15px;
-  margin-bottom: 15px;
 }
 
 .venue img:hover {
   transform: none;
 }
-
-/*.venue p,
-h4 {
-  color: whitesmoke;
-}*/
 
 .venue h4,
 p {
@@ -40,15 +74,20 @@ p {
 }
 
 /*Threats styling starts*/
-#habitat h4,
-#trade h4 {
-  text-align: center;
-}
 
 #habitat h4,
 #trade h4,
 #threats h1 {
   color: whitesmoke;
+}
+
+.threats-headings {
+  text-align: left;
+  padding-left: 3vw;
+}
+
+.threats-para {
+  text-align: left;
 }
 
 #habitat p {
@@ -68,10 +107,60 @@ p {
 
   background-color: #021116;
   opacity: 0.8;
-  background-image: repeating-radial-gradient(
-      circle at 0 0,
+  background-image: repeating-radial-gradient(circle at 0 0,
       transparent 0,
-      #021116 10px
-    ),
-    repeating-linear-gradient(#02111655, #555f0b);
+      #021116 10px),
+    repeating-linear-gradient(#02111655, #313607);
+}
+
+
+@media screen and (min-width: 1920px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 850px) {
+  #leo-sec1 {
+    padding-right: 0;
+    margin-top: 2vh;
+  }
+
+  #leo-sec1 p {
+    padding: 0;
+  }
+
+  #leo-sec1 .title {
+    margin-bottom: 5vh;
+  }
+
+  #leo-sec1-facts {
+    width: 80%;
+    margin-top: 2vh;
+  }
+
+  #threats section {
+    width: 100%;
+  }
+
+  #threats section p {
+    text-align: justify;
+  }
+
+  .tr {
+    font-size: 0.8rem;
+  }
+
+  .venue {
+    width: 100%;
+  }
+
+  .venue img {
+    width: 100%;
+  }
+
+  .threats-headings,
+  .threats-para {
+    text-align: center;
+  }
+
+
 }

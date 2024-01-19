@@ -1,10 +1,321 @@
+/*THIS STYLE SHEET CONSIT OF ELEMENTS FROM COMMON STYLE SHEET AS THE REQUIRMENTS WERE TO CREATE A SEPERATE 
+STYLE SHEET FOR THIS PAGE*/
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter&family=Lato&family=Libre+Bodoni:wght@600&display=swap");
+
+
+
+/*SMOOTH LOADING ANIMATION STARTS*/
+main {
+  animation: transitionIn 1s;
+}
+
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*SMOOTH LOADING ANIMATION ENDS*/
+
+
+/*UNIQUE ANIMATIONS FOR WILPATTU STARTS*/
+@keyframes movingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body,
+html {
+  overflow-x: hidden;
+  background: linear-gradient(45deg, #021116, #1baf76, #52bb52, #b5b81f, #bacf16);
+  background-size: 200% 200%;
+  animation: movingGradient 5s infinite linear;
+}
+
+/*topic glow*/
+@keyframes glowAnimation {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    opacity: 1;
+  }
+
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    opacity: 1;
+  }
+
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    opacity: 1;
+  }
+}
+
+.wilpattu-header h2,
+.wilpattu-header h1 {
+  animation: glowAnimation 1.5s infinite alternate ease-in-out;
+}
+
+/*UNIQUE ANIMATIONS FOR WILPATTU ENDS*/
+
+
+/*ANIMATIONS STARTS*/
+/*COMMON ANIMATIONS STARTS*/
+.ctn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #b5b81f, #bacf16, #1baf76, #52bb52);
+}
+
+.nav-links li {
+  transition: 0.3s ease;
+}
+
+.nav-links li:hover {
+  transform: scale(1.2);
+}
+
+.social-icons img {
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/*COMMON ANIMATION ENDS*/
+
+/*COMMON STYLING FOR ALL PAGES*/
+&::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+
+ul {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  pointer-events: none;
+}
+
+p {
+  color: #021116;
+  padding: 0px 40px;
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 3vmin;
+  color: #021116;
+  margin: 20px auto;
+}
+
+.shadow {
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+}
+
+/*NAVIGATION BAR STYLING STARTS*/
+.logo {
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+.nav-links li a,
+.ctn {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.active {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  color: whitesmoke;
+  background-color: #02111657;
+  backdrop-filter: blur(40px);
+  z-index: 1000;
+}
+
+.sub-menu li {
+  padding: 10px;
+  padding-left: 0%;
+  align-items: center;
+  text-align: center;
+}
+
+.sub-menu {
+  margin-top: 18px;
+  position: absolute;
+  right: -70px;
+  width: 200px;
+  background-color: #02111688;
+  box-shadow: 0 0 5px #1b1b1b67;
+  border-radius: 10px;
+  display: none;
+}
+
+.nav-links li:hover>.sub-menu {
+  font-size: smaller;
+  display: initial;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 30px;
+}
+
+/*NAVIGATION BAR STYLING ENDS*/
+
+/*GO TO TOP BUTTON STYLING STARTS*/
+#gotopbtn {
+  margin: 0;
+}
+
+#gotopbtn img {
+  z-index: 1;
+  position: fixed;
+  width: 40px;
+  bottom: 40px;
+  right: 45px;
+  background: linear-gradient(45deg, #1baf76, #52bb52, #b5b81f, #bacf16);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+/*GO TO TOP BUTTON STYLING ENDS*/
+
+/*HEADER CONTENT STYLING STARTS*/
+/*Header tag styling is at the top of the stylesheet*/
+.header-content {
+  width: 80%;
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 15px;
+  z-index: 0;
+}
+
+h1 {
+  font-family: "Libre Bodoni", serif;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+  margin-top: 50px;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: linear-gradient(45deg, #1baf76, #52bb52, #b5b81f, #bacf16);
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 8vmin;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.ctn {
+  padding: 8px 15px;
+  background: linear-gradient(45deg, #52bb52, #1baf76, #b5b81f, #bacf16);
+  border-radius: 30px;
+  color: whitesmoke;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 25px;
+  cursor: pointer;
+  display: none;
+
+}
+
+/*HEADER CONTENT STYLING ENDS*/
+
+/*COMMON SECTIONS STYLING STARTS*/
+
+.title {
+  text-align: center;
+  font-size: 5vmin;
+  color: #021116;
+}
+
+/*PAGE STYLING STARTS HERE*/
 .wilpattu-header {
-  background-image: url(../IMAGES/wilpattu-images/wilpattu-background.webp);
+  background-image: url(../IMAGES/wilpattu-images/wilpattu.jpg);
 }
 
 .container p {
   color: whitesmoke;
   padding: 40px;
+}
+
+.container h4 {
+  color: whitesmoke;
 }
 
 .container {
@@ -17,6 +328,7 @@
 
 #content-1 {
   background-color: #3a3a3bb9;
+  box-shadow: 0 0 10px 1px #161615;
   grid-area: content-1;
   border-radius: 15px;
   padding-top: 15px;
@@ -24,6 +336,7 @@
 
 #content-2 {
   background-color: #3a3a3bb9;
+  box-shadow: 0 0 10px 1px #161615;
   grid-area: content-2;
   border-radius: 15px;
   padding-top: 15px;
@@ -31,12 +344,330 @@
 
 #content-3 {
   background-color: #3a3a3bb9;
+  box-shadow: 0 0 10px 1px #161615;
   grid-area: content-3;
   border-radius: 15px;
   padding-top: 15px;
 }
 
+P {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  font-size: .9rem;
+  background-color: #272727b9;
+  box-shadow: 0 0 10px 1px #161615;
+  border-radius: 15px;
+  padding: 2vh;
+  color: whitesmoke;
+}
+
+table tr td,
+th {
+  padding-bottom: 2vh;
+}
+
+.table-headings {
+  width: 30%;
+  font-weight: bold;
+  text-align: left;
+}
+
+.table-space {
+  width: 2%;
+}
+
+.map-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+  width: 100%;
+}
+
+.map-container {
+  text-align: center;
+}
+
+.map-container img {
+  width: 90%;
+  height: auto;
+}
+
+.map-text-container p {
+  text-align: justify;
+}
+
+/*SWIPER JS IMAGE SLIDER STYLING STARTS*/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: whitesmoke !important;
+  font-weight: bolder;
+}
+
+.swiper-pagination-bullet {
+  background-color: whitesmoke !important;
+}
+
+/*SWIPER JS IMAGE SLIDER STYLING ENDS*/
+/*PAGE STYLING ENDS HERE*/
+
+/*FOOTER STYLING STARTS*/
+footer {
+  background-color: #021116;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#copyright-text a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+#copyright-text a:hover {
+  color: #bacf16;
+  transition: .5s;
+}
+
+#copyright-text {
+  pointer-events: visible;
+  font-weight: 200;
+  font-size: 0.7rem;
+  padding: 10px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+}
+
+.quick-links {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.quick-links:hover {
+  text-decoration: underline;
+  transition: 0.2s;
+  color: #bacf16;
+}
+
+footer h4 {
+  font-size: 4vmin;
+  margin-bottom: 15px;
+  color: #555f0b;
+}
+
+footer p {
+  line-height: 1.6;
+  color: whitesmoke;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0px;
+}
+
+/*FOOTER STYLING ENDS*/
+
+/*COMMON RESPONSIVNESS STARTS*/
+@media only screen and (min-width: 1920px) {
+
+  .logo {
+    width: 100%;
+    height: 80px;
+  }
+
+  .ctn,
+  .quick-links,
+  p {
+    font-size: 1.5rem;
+  }
+
+  p {
+    padding: 10px 60px;
+  }
+
+  nav {
+    height: 10vh;
+  }
+
+  nav a {
+    font-size: 1.6rem;
+  }
+
+  .sub-menu li a {
+    font-size: 1.2rem;
+  }
+
+  .active {
+    font-size: 1.7rem;
+  }
+
+  .sub-menu {
+    margin-top: 30px;
+    width: 250px;
+  }
+
+  .footer-container {
+    max-width: 1920px;
+  }
+
+  .social-icons img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 @media only screen and (max-width: 850px) {
+
+  .header-content h1 {
+    margin-top: 5px;
+  }
+
+  .ctn,
+  p {
+    font-size: 0.8rem;
+  }
+
+  /*Navbar res starts*/
+  .menu-btn {
+    display: block;
+    z-index: 100;
+  }
+
+  .navbar {
+    padding: 0;
+    z-index: 100;
+  }
+
+  .logo {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    padding: 5px 5px;
+    top: 20px;
+    left: 30px;
+    pointer-events: none;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: #021116;
+    margin-top: -3000px;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu {
+    margin-top: 0px;
+  }
+
+  .sub-menu {
+    margin: 18px 23px;
+    position: absolute;
+    width: 150px;
+    background-color: #555f0b;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: none;
+  }
+
+  .sub-menu li {
+    padding: 10px;
+  }
+
+  .nav-links li {
+    margin: 30px auto;
+  }
+
+  .map-section {
+    flex-direction: column;
+  }
+
+  .map-container {
+    margin-bottom: 0;
+  }
+
+  .map-text-container p {
+    padding: 0;
+  }
+
+  /*footer res*/
+  footer {
+    padding: 10px;
+  }
+
+  footer h3 {
+    font-size: 6vmin;
+  }
+
+  .quick-links {
+    font-size: 0.7rem;
+  }
+
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #copyright-text {
+    padding: 0 40px;
+  }
+
+  #gotopbtn img {
+    width: 30px;
+    height: 30px;
+    right: 30px;
+  }
+
+  /*Page res*/
   .container {
     display: grid;
     grid-auto-flow: column;
@@ -52,3 +683,5 @@
     font-size: 6vmin;
   }
 }
+
+/*COMMON RESPONSIVNESS ENDS*/

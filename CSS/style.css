@@ -18,7 +18,7 @@ body,
 html {
   overflow-x: hidden;
   /*background-color: #b2c56d;*/
-  background-image: linear-gradient(to bottom, #fff, #b9cf167c);
+  background-image: linear-gradient(to bottom, #ffffff, #b9cf167c);
 }
 
 header {
@@ -31,6 +31,7 @@ header {
   align-items: center;
   justify-content: center;
 }
+
 
 section {
   width: 80%;
@@ -74,9 +75,10 @@ h4 {
 
 /*NAVIGATION BAR STYLING STARTS*/
 .logo {
-  width: 50px;
+  width: 100%;
   height: 50px;
-  border-radius: 3px;
+  border-radius: 15px;
+  pointer-events: none;
 }
 
 .nav-links li a,
@@ -112,7 +114,7 @@ h4 {
 }
 
 .sub-menu {
-  margin-top: 20px;
+  margin-top: 18px;
   position: absolute;
   right: -70px;
   width: 200px;
@@ -141,6 +143,7 @@ h4 {
 /*GO TO TOP BUTTON STYLING STARTS*/
 #gotopbtn {
   margin: 0;
+  z-index: 10;
 }
 
 #gotopbtn img {
@@ -200,9 +203,10 @@ h1 {
   position: absolute;
   top: 30px;
   right: 30px;
-  width: 20px;
+  width: 25px;
   cursor: pointer;
   display: none;
+
 }
 
 /*HEADER CONTENT STYLING ENDS*/
@@ -241,7 +245,7 @@ h1 {
 }
 
 .conserve-content h1 {
-  font-size: 7vmin;
+  font-size: 6vmin;
   text-align: center;
 }
 
@@ -273,8 +277,13 @@ footer {
 }
 
 #copyright-text a {
+  color: whitesmoke;
   text-decoration: none;
+}
+
+#copyright-text a:hover {
   color: #bacf16;
+  transition: .5s;
 }
 
 #copyright-text {
@@ -340,12 +349,70 @@ footer p {
 /*FOOTER STYLING ENDS*/
 
 /*COMMON RESPONSIVNESS STARTS*/
+@media only screen and (min-width: 1920px) {
+
+  .logo {
+    width: 100%;
+    height: 80px;
+  }
+
+  .ctn,
+  .quick-links,
+  p {
+    font-size: 1.5rem;
+  }
+
+  p {
+    padding: 10px 60px;
+  }
+
+  nav {
+    height: 10vh;
+  }
+
+  nav a {
+    font-size: 1.6rem;
+  }
+
+  .sub-menu li a {
+    font-size: 1.2rem;
+  }
+
+  .active {
+    font-size: 1.7rem;
+  }
+
+  .sub-menu {
+    margin-top: 30px;
+    width: 250px;
+  }
+
+  .footer-container {
+    max-width: 1920px;
+  }
+
+  .social-icons img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .conserve-content {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 850px) {
+
+  .header-content h1 {
+    margin-top: 5px;
+  }
 
   .ctn,
   p {
-    font-size: 0.7rem;
-    padding: auto;
+    font-size: 0.8rem;
   }
 
   /*Navbar res starts*/
@@ -360,8 +427,8 @@ footer p {
   }
 
   .logo {
-    width: 50px;
-    height: 50px;
+    width: 20%;
+    height: auto;
     position: absolute;
     padding: 5px 5px;
     top: 20px;
@@ -403,6 +470,20 @@ footer p {
 
   /*Navbar res ends*/
 
+  /*Events res starts*/
+  .events .title {
+    margin-bottom: 0;
+  }
+
+  .events .row {
+    margin-top: 40px;
+  }
+
+  .row .col p {
+    text-align: justify;
+    padding: 0 5px;
+  }
+
   /*conserve section res*/
 
   .conserve {
@@ -410,16 +491,17 @@ footer p {
   }
 
   .conserve-content {
-    width: 80%;
+    width: 90%;
     padding: 50px 10px;
   }
 
   .conserve-content p {
     color: whitesmoke;
-    text-align: center;
+    text-align: justify;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 0 5px;
   }
 
   /*footer res*/

@@ -41,6 +41,7 @@
 .txt-center {
   text-align: center;
 }
+
 /*SECTION 1 STYLING ENDS*/
 
 /*SECTION 3 STYLING STARTS*/
@@ -82,6 +83,16 @@
 .content-col .ctn {
   margin-left: -32vw;
 }
+
+.home-list ul {
+  list-style: inside;
+}
+
+.home-list {
+  padding-right: 10%;
+  text-align: justify;
+}
+
 /*SECTION 3 STYLING ENDS*/
 
 /*SECTION 1 AND 3 RESPONSIVNESS STARTS*/
@@ -129,11 +140,33 @@
   .content-col .ctn {
     margin-left: 0px;
   }
+
+  .home-list {
+    padding-right: 0;
+    margin: 5%;
+  }
+
+  .home-list h3 {
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .home-list li {
+    font-size: 0.8rem;
+  }
 }
+
 /*RESPONSIVNESS ENDS*/
 /*this was done to prevent responsive issue with ipad pro*/
 @media only screen and (max-width: 1024px) {
   .events {
     width: 100%;
   }
+}
+
+@media only screen and (min-width: 1920px) {
+  .image-col {
+    width: 60%;
+  }
+
 }

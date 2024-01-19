@@ -1,5 +1,11 @@
 /*Grids are given diffrernt colors for easy Identification*/
 /*This is used to define variables and later on you can use variables without defining it again*/
+
+body,
+html {
+  background-image: linear-gradient(to bottom, #383838b9, #b9cf167c);
+}
+
 :root {
   --main-radius: 15px;
   --main-padding: 5px;
@@ -25,6 +31,11 @@
   margin: 40px auto;
 }
 
+#title,
+#para-white {
+  color: whitesmoke;
+}
+
 /*section {
   width: 100%;
   margin: 0;
@@ -38,7 +49,6 @@ nav {
 main {
   margin-top: 11vh;
   height: 100vh;
-  background-color: rgba(127, 255, 212, 0);
   grid-area: main;
   padding-top: var(--main-padding);
 }
@@ -46,34 +56,46 @@ main {
 /*alll contents common styling*/
 .content {
   height: 50vh;
-  padding-top: var(--main-padding);
+  z-index: 1;
 }
 
 #sidebar {
   margin-top: 11vh;
-  background-color: #262626;
   grid-area: sidebar;
   padding-top: var(--main-padding);
+  background-color: #021116;
+  opacity: 0.8;
+  background-image: repeating-radial-gradient(circle at 0 0,
+      transparent 0,
+      #021116 10px),
+    repeating-linear-gradient(#02111655, #555f0b);
+  box-shadow: 5px -5px 10px #bacf16;
+}
+
+.eveimg {
+  width: 100%;
+  height: 99.8%;
+  box-shadow: 10px -5px 10px #bacf16;
+}
+
+.eveimg:hover {
+  transform: none;
 }
 
 #content-1 {
-  background-color: crimson;
   grid-area: content-1;
 }
 
 #content-2 {
-  background-color: greenyellow;
   grid-area: content-2;
 }
 
 #content-3 {
-  background-color: chartreuse;
   grid-area: content-3;
 }
 
 #content-4 {
   height: 110vh;
-  /*background-color: cadetblue;*/
   grid-area: content-4;
 }
 
@@ -81,6 +103,7 @@ footer {
   grid-area: footer;
   height: auto;
 }
+
 /*upcoming events related stuff*/
 article {
   display: grid;
@@ -100,24 +123,38 @@ article img:hover {
   transform: none;
 }
 
+.article-content {
+  background-color: #3a3a3bb9;
+  border-radius: var(--main-radius);
+  text-align: left;
+  padding: 2vh;
+  color: whitesmoke;
+}
+
+.article-content li {
+  padding: 5%;
+}
+
 #acontent-1 {
   grid-area: acontent-1;
-  background-color: brown;
 }
 
 #acontent-2 {
   grid-area: acontent-2;
-  background-color: blue;
 }
 
 #image-1 {
   grid-area: image-1;
-  background-color: rebeccapurple;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--main-radius);
 }
 
 #image-2 {
   grid-area: image-2;
-  background-color: burlywood;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--main-radius);
 }
 
 /*upcoming conservations related stuff*/
@@ -218,11 +255,18 @@ article img:hover {
   #sidebar {
     margin-top: 13vh;
     height: 10vh;
+    box-shadow: 0px 0px 10px #bacf16;
   }
+
+  .eveimg {
+    box-shadow: none;
+  }
+
   main {
     margin-top: 0;
-    height: 145vh;
+    height: 170vh;
   }
+
   .content {
     height: 33.3vh;
   }
