@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="CSS/index-style.css" />
   <link rel="stylesheet" href="CSS/animations.css" />
+  <link rel="stylesheet" href="CSS/newsletter-style.css" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="IMAGES/navfooter-images/mainicon.ico" />
@@ -25,8 +26,9 @@
   <title>Wildlife Sri Lanka | Home</title>
 </head>
 
-<body>
+<script src="//unpkg.com/alpinejs" defer></script>
 
+<body x-data="body">
   <!-- Navigation Section -->
   <nav class="navbar">
     <!-- Logo link -->
@@ -69,7 +71,7 @@
       <li><a href="events.html">Events</a></li>
 
       <!-- Contact Us link -->
-      <li><a href="contact.html" class="ctn">Contact Us</a></li>
+      <li><a href="login.html" class="ctn">Login</a></li>
     </ul>
 
     <!-- Menu button for mobile -->
@@ -83,9 +85,9 @@
     <header id="home-header">
       <!-- Header content with welcome message -->
       <section class="header-content">
-        <h2 class="shadow">Welcome To</h2>
+        <h2 class="shadow" id="indexSubtitle" x-text="indexSubtitle" contenteditable="true"></h2>
         <aside class="line"></aside>
-        <h1 class="shadow">SRI LANKAN WILDLIFE</h1>
+        <h1 class="shadow" id="indexTitle" x-text="indexTitle" contenteditable="true"></h1>
         <a href="#home-sec1" class="ctn">Scroll</a>
       </section>
     </header>
@@ -94,7 +96,7 @@
     <section class="events">
       <!-- Title for upcoming wildlife expeditions -->
       <section class="title" id="home-sec1">
-        <h1>UPCOMING WILD LIFE EXPEDITIONS</h1>
+        <h1 id="eventsTitle" x-text="eventsTitle" contenteditable="true"></h1>
         <aside class="line"></aside>
       </section>
 
@@ -103,22 +105,16 @@
         <section class="col">
           <img src="IMAGES/homepage-images/expeditions.webp" alt="an image of a yala safari trip"
             class="event-images" />
-          <h4>Safari at Wilpattu National Park</h4>
-          <p class="txt-center">
-            Explore Wilpattu's wild wonders—encounter leopards, elephants, and
-            diverse wildlife on thrilling safaris through stunning, untamed
-            landscapes. Adventure awaits!
+          <h4 id="wilpattuTitle" x-text="wilpattuTitle" contenteditable="true"></h4>
+          <p class="txt-center" id="wilpattuText" x-text="wilpattuText" contenteditable="true">
           </p>
           <a href="events.html#main" class="ctn">Learn More</a>
         </section>
         <section class="col">
           <img src="IMAGES/homepage-images/birdwatching.webp" alt="an image of people bird Watching"
             class="event-images" />
-          <h4>Kumana Park Bird Watching</h4>
-          <p class="txt-center">
-            Immerse in Kumana National Park's avian paradise—spot vibrant
-            migratory birds amidst lush landscapes, a haven for birdwatchers'
-            delight.
+          <h4 id="kumanaTitle" x-text="kumanaTitle" contenteditable="true"></h4>
+          <p class="txt-center" id="kumanaText" x-text="kumanaText" contenteditable="true">
           </p>
           <a href="events.html#main" class="ctn">Learn More</a>
         </section>
@@ -129,16 +125,9 @@
     <section class="conserve" id="home-sec2">
       <!-- Conservation content with title and description -->
       <section class="conserve-content">
-        <h1 class="shadow">UNVEILING SRI LANKA'S WILDLIFE WONDERS</h1>
+        <h1 class="shadow" id="wondersTitle" x-text="wondersTitle" contenteditable="true"></h1>
         <aside class="line"></aside>
-        <p>
-          Dive deeper into Sri Lanka's wildlife wonders and unlock the secrets
-          of its diverse ecosystems. Get ready to explore a world where
-          majestic elephants roam freely, vibrant birdlife fills the skies,
-          and elusive leopards move with stealth through lush jungles. Click
-          to learn more about this captivating tapestry of biodiversity and
-          embark on an immersive journey into the heart of Sri Lanka's natural
-          treasures.
+        <p id="wondersText" x-text="wondersText" contenteditable="true">
         </p>
         <a href="introduction.html#intro-sec1" class="ctn">Explore !</a>
       </section>
@@ -149,13 +138,9 @@
       <section class="row">
         <section class="col content-col">
           <!-- Title for upcoming wildlife conservations -->
-          <h1>UPCOMING WILD LIFE CONSERVATIONS</h1>
+          <h1 id="conserveTitle" x-text="conserveTitle" contenteditable="true"></h1>
           <aside class="line"></aside>
-          <p>
-            Stay tuned for our upcoming wildlife conservation initiatives!
-            We're dedicated to implementing new projects, fostering
-            partnerships, and launching campaigns to protect and sustain our
-            precious natural ecosystems.
+          <p id="conserveText" x-text="conserveText" contenteditable="true">
           <ol class="home-list">
             <h3>Why Join with Us?</h3>
             <li>Embark on a thrilling safari in the heart of the savannah.</li>
@@ -230,6 +215,16 @@
               alt="Instagram" /></a>
         </section>
       </section>
+
+      <section class="newsletter-section">
+        <h4>Subscribe to Our Newsletter</h4>
+        <p>Stay updated with our latest news and promotions.</p>
+        <form id="newsletter-form">
+          <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+          <button type="submit" id="subscribe-btn">Subscribe</button>
+        </form>
+      </section>
+
     </section>
 
     <!-- Copyright text with link to creator's contact -->
@@ -246,7 +241,6 @@
     - Sri Lankan wildlife conservation department
     - Youtube -->
   </footer>
-
   <!-- JavaScript for mobile menu toggle -->
   <script>
     const menubutton = document.querySelector(".menu-btn");
@@ -255,6 +249,10 @@
       navlinks.classList.toggle("mobile-menu");
     });
   </script>
+  <script src="JS/homepage.js"></script>
+  <script src="JS/newsletter.js"></script>
+
+
 
 </body>
 

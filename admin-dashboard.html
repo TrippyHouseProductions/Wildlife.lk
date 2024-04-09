@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4eaa29;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Admin Dashboard</h1>
+    <a href="login.html">Back</a>
+    <h2>User Credentials</h2>
+    <table id="userTable">
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </table>
+    <script>
+    </script>
+
+
+    <h2>Subscriber List</h2>
+    <table id="subscriber-table">
+        <thead>
+            <tr>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="subscriber-list"></tbody>
+    </table>
+
+    <script>
+        // Displaying newsletter details when admin login
+        document.addEventListener("DOMContentLoaded", function () {
+            const subscriberTable = document.getElementById("subscriber-table");
+            const subscriberList = document.getElementById("subscriber-list");
+
+            // Retrieve subscriptions from local storage
+            const subscriptions =
+                JSON.parse(localStorage.getItem("newsletterSubscriptions")) || [];
+
+            // Display subscriptions in table format
+            subscriptions.forEach(function (email) {
+                const row = document.createElement("tr");
+                const cell = document.createElement("td");
+                cell.textContent = email;
+                row.appendChild(cell);
+                subscriberList.appendChild(row);
+            });
+
+            // Show the table
+            subscriberTable.style.display = "block";
+        });
+    </script>
+    <script>
+        //Displays the login details in admin dashboard
+        document.addEventListener("DOMContentLoaded", function () {
+            const users = JSON.parse(localStorage.getItem("users")) || [];
+            const tableBody = document.getElementById("userTable");
+
+            users.forEach((user) => {
+                const row = tableBody.insertRow();
+                row.insertCell(0).textContent = user.username;
+                row.insertCell(1).textContent = user.email;
+                const removeButton = document.createElement("button");
+                removeButton.textContent = "Remove";
+                removeButton.addEventListener("click", function () {
+                    // Remove the user from the array
+                    const index = users.findIndex((u) => u.username === user.username);
+                    users.splice(index, 1);
+                    // Update local storage
+                    localStorage.setItem("users", JSON.stringify(users));
+                    // Remove the row from the table
+                    tableBody.deleteRow(row.rowIndex);
+                });
+                row.insertCell(2).appendChild(removeButton);
+            });
+        });
+    </script>
+</body>
+
+</html>

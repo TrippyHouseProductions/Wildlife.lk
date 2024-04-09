@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/introduction-style.css" />
     <link rel="stylesheet" href="CSS/animations.css" />
+    <link rel="stylesheet" href="CSS/newsletter-style.css">
     <link rel="icon" type="image/x-icon" href="IMAGES/navfooter-images/mainicon.ico" />
     <title>Wildlife Sri Lanka | Introduction</title>
 </head>
 
-<body>
+<script src="//unpkg.com/alpinejs" defer></script>
+
+<body x-data="introbody">
 
     <nav class="navbar">
         <a href="index.html"><img src="IMAGES/navfooter-images/logo.webp" class="logo" alt="logo" /></a>
@@ -35,7 +38,7 @@
                 </ul>
             </li>
             <li><a href="events.html">Events</a></li>
-            <li><a href="contact.html" class="ctn">Contact Us</a></li>
+            <li><a href="login.html" class="ctn">Login</a></li>
         </ul>
         <img src="IMAGES/navfooter-images/menu-btn.webp" class="menu-btn" />
     </nav>
@@ -44,24 +47,17 @@
 
         <header id="intro-header">
             <section class="header-content">
-                <h2>Sri Lanka's Wildlife Delights</h2>
+                <h2 id="subtitle" x-text="subtitle" contenteditable="true"></h2>
                 <aside class="line"></aside>
-                <h1 class="shadow">AN INTRODUCTION</h1>
+                <h1 class="shadow" id="title" x-text="title" contenteditable="true"></h1>
                 <a href="#intro-sec1" class="ctn">Scroll</a>
             </section>
         </header>
         <section class="title">
-            <h1 id="intro-sec1">WHERE TO VISIT</h1>
+            <h1 id="intro-sec1" id="section1Title" x-text="section1Title" contenteditable="true"></h1>
             <aside class="line"></aside>
-            <p>Explore Sri Lanka's diverse and captivating wildlife beyond the renowned Yala and Wilpattu. Venture into
-                lesser-explored
-                sanctuaries like Sinharaja Rainforest, home to a rich tapestry of flora and fauna. Discover the lush
-                landscapes of
-                Udawalawe National Park, a haven for elephants and myriad bird species. Traverse the scenic Horton
-                Plains, where elusive
-                leopards and endemic species thrive in a stunning natural setting. Sri Lanka's hidden wildlife gems
-                await your
-                discovery, promising unforgettable encounters with nature's wonders.</p>
+            <p id="section1Text" x-text="section1Text" contenteditable="true">
+            </p>
         </section>
         <section class="location">
             <img src="IMAGES/introduction-images/singharaja.webp" alt="an image of the Sinharaja Rainforest">
@@ -69,10 +65,9 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.899115223028!2d80.45745167435872!3d6.406996124507544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3e76bd109d45f%3A0x8c0ef1010649701b!2sSinharaja%20Forest%20Reserve!5e0!3m2!1sen!2slk!4v1704402897490!5m2!1sen!2slk"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h4>Sinharaja Rainforest</h4>
-            <p>A UNESCO World Heritage Site, brimming with diverse species of birds, amphibians, and rare trees,
-                offering a glimpse
-                into Sri Lanka's tropical biodiversity.</p>
+            <h4 id="section2Title" x-text="section2Title" contenteditable="true"></h4>
+            <p id="section2Text" x-text="section2Text" contenteditable="true">
+            </p>
         </section>
 
         <section class="location">
@@ -81,10 +76,9 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3707621259987!2d80.87170557192209!3d6.474634109425551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae408ff88887e79%3A0xaf12e79ffbd980d7!2sUdawalawe%20National%20Park!5e0!3m2!1sen!2slk!4v1704402814795!5m2!1sen!2slk"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h4>Udawalawe National Park</h4>
-            <p>Known for its large elephant population, this park also hosts a variety of mammals, birds, and reptiles
-                amidst its
-                scenic grasslands and reservoirs.</p>
+            <h4 id="section3Title" x-text="section3Title" contenteditable="true"></h4>
+            <p id="section3Text" x-text="section3Text" contenteditable="true">
+            </p>
         </section>
 
         <section class="location">
@@ -93,10 +87,9 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253219.78137801966!2d80.55003056623754!3d7.4031979110955675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae358a7b9d31741%3A0x8e07351ec1700584!2sKnuckles%20Forest%20Reserve!5e0!3m2!1sen!2slk!4v1704401820370!5m2!1sen!2slk"
                 width="600" height="380" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h4>Knuckles Mountain Range</h4>
-            <p>Rich in biodiversity and scenic beauty, this range is home to numerous endemic species and provides
-                fantastic trekking
-                opportunities.</p>
+            <h4 id="section4Title" x-text="section4Title" contenteditable="true"></h4>
+            <p id="section4Text" x-text="section4Text" contenteditable="true">
+            </p>
         </section>
 
         <section class="summary">
@@ -210,6 +203,16 @@
                             src="IMAGES/navfooter-images/instagram-icon.webp" alt="Instagram" /></a>
                 </section>
             </section>
+
+            <section class="newsletter-section">
+                <h4>Subscribe to Our Newsletter</h4>
+                <p>Stay updated with our latest news and promotions.</p>
+                <form id="newsletter-form">
+                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" id="subscribe-btn">Subscribe</button>
+                </form>
+            </section>
+
         </section>
         <h5 id="copyright-text">
             © 2004-2024 All Rights Reserved. Created by
@@ -231,6 +234,7 @@
             navlinks.classList.toggle("mobile-menu");
         });
     </script>
+    <script src="JS/homepage.js"></script>
 
 </body>
 

@@ -7,11 +7,14 @@
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="CSS/animations.css" />
   <link rel="stylesheet" href="CSS/leopard-style.css" />
+  <link rel="stylesheet" href="CSS/newsletter-style.css">
   <link rel="icon" type="image/x-icon" href="IMAGES/navfooter-images/mainicon.ico" />
   <title>Wildlife Sri Lanka | Sri Lankan Leopard</title>
 </head>
 
-<body>
+<script src="//unpkg.com/alpinejs" defer></script>
+
+<body x-data="leopardbody">
   <nav class="navbar">
     <a href="index.html"><img src="IMAGES/navfooter-images/logo.webp" class="logo" alt="logo" /></a>
     <ul class="nav-links">
@@ -34,44 +37,26 @@
         </ul>
       </li>
       <li><a href="events.html">Events</a></li>
-      <li><a href="contact.html" class="ctn">Contact Us</a></li>
+      <li><a href="login.html" class="ctn">Login</a></li>
     </ul>
     <img src="IMAGES/navfooter-images/menu-btn.webp" class="menu-btn" />
   </nav>
   <main>
     <header id="leopard-header">
       <section class="header-content">
-        <h2 class="shadow">Island Majesty</h2>
+        <h2 class="shadow" id="subtitle" x-text="subtitle" contenteditable="true"></h2>
         <aside class="line"></aside>
-        <h1 class="shadow">SRI LANKAN LEOPARD</h1>
+        <h1 class="shadow" id="title" x-text="title" contenteditable="true"></h1>
         <a href="#leo-sec1" class="ctn">Scroll</a>
       </section>
     </header>
 
     <section id="leo-sec1">
       <section class="title">
-        <h1>FACTS</h1>
+        <h1 id="section1Title" x-text="section1Title" contenteditable="true"></h1>
         <aside class="line"></aside>
       </section>
-      <p>
-        Sri Lankan leopards are highly adaptable. They are found in a range of habitat types, through from different
-        kinds of
-        forest, to grasslands and even in tea plantations and home gardens! They are effective hunters and take a
-        variety of
-        different prey items. They mostly prefer small deer, but will also eat wild boar, hare, monkeys, birds and
-        even
-        crabs
-        and insects. This flexibility has allowed them to survive in a range of environments across Sri Lanka.
-        <br><br>
-        Less than 1000 Sri Lankan leopards are left in the wild. This is due mainly to conflict with humans – human
-        encroachment
-        into leopard habitat, hunting of animals that come too close to human areas or interfere with farmers, and
-        poaching for
-        skins and other body parts.
-        <br><br>
-        The National Zoo and Aquarium is home to 4 Sri Lankan Leopards; Ankesh and Yakalla and their offspring Asanka
-        and
-        Chatura.
+      <p id="section1Text" x-text="section1Text" contenteditable="true" >
       </p>
       <section id="leo-sec1-facts">
         <table>
@@ -93,19 +78,15 @@
 
     <section id="venues">
       <section class="title" id="leo-sec2">
-        <h1>VENUES WHERE LEOPARDS ARE FOUND</h1>
+        <h1 id="section2Title" x-text="section2Title" contenteditable="true"></h1>
         <aside class="line"></aside>
       </section>
       <!-- First Venue -->
       <section class="venue">
         <img src="IMAGES/leopard-images/yalaleopard.webp" alt="Venue 1" />
         <img src="IMAGES/leopard-images/yala.webp" alt="Venue 1" />
-        <h4>Yala National Park</h4>
-        <p>
-          Yala National Park is a prime leopard habitat, known for its diverse
-          wildlife and varied landscapes, offering an excellent chance to spot
-          these elusive creatures. This National Park has the highest density
-          of leopards to be found anywhere in the world and is as
+        <h4 id="section3Title" x-text="section3Title" contenteditable="true"></h4>
+        <p id="section3Text" x-text="section3Text" contenteditable="true">
           <span class="highlight">much as one leopard per square kilometer.</span>
         </p>
       </section>
@@ -114,10 +95,8 @@
       <section class="venue">
         <img src="IMAGES/leopard-images/wilpattuleopard.webp" alt="Venue 2" />
         <img src="IMAGES/leopard-images/wilpattu.webp" alt="Venue 2" />
-        <h4>Wilpattu National Park</h4>
-        <p>
-          Wilpattu, the largest national park in Sri Lanka, provides a
-          sanctuary for leopards within its dense forests and serene lakes.
+        <h4 id="section4Title" x-text="section4Title" contenteditable="true"></h4>
+        <p id="section4Text" x-text="section1Text" contenteditable="true">
         </p>
       </section>
 
@@ -125,122 +104,51 @@
       <section class="venue">
         <img src="IMAGES/leopard-images/hortonplainsleopard.webp" alt="Venue 3" />
         <img src="IMAGES/leopard-images/hortonplains.webp" alt="Venue 3" />
-        <h4>Horton Plains National Park</h4>
-        <p>
-          Situated amidst misty mountains, Horton Plains hosts a population of
-          leopards thriving in its unique highland ecosystem.
+        <h4 id="section5Title" x-text="section5Title" contenteditable="true"></h4>
+        <p id="section5Text" x-text="section5Text" contenteditable="true">
         </p>
       </section>
     </section>
     <section id="threats">
       <section class="title" id="home-sec1">
-        <h1>THREATS</h1>
+        <h1 id="section6Title" x-text="section6Title" contenteditable="true"></h1>
         <aside class="line"></aside>
       </section>
 
       <!-- Threat 1 -->
       <section id="habitat">
-        <h4 class="threats-headings">Habitat Loss Threat ⚠️</h4>
-        <p class="threats-para">
-          Habitat loss stands as a significant threat to the survival of Sri Lankan leopards. Human-induced activities
-          such as
-          deforestation, land conversion for agriculture, and urban development have drastically reduced the leopard's
-          natural
-          habitats. The shrinking habitats confine leopards to smaller areas, increasing encounters with humans and
-          leading to
-          escalated conflicts. These disruptions to their habitat greatly impact their behavior, foraging patterns, and
-          reproductive success, threatening the overall well-being of the leopard population.
+        <h4 class="threats-headings" id="section7Title" x-text="section7Title" contenteditable="true"></h4>
+        <p class="threats-para" id="section7Text" x-text="section7Text" contenteditable="true">
         </p>
 
-        <h4 class="threats-headings">Consequences 🛑</h4>
-        <p class="threats-para">
-          The consequences of habitat loss are profound for Sri Lankan leopards. The reduction and fragmentation of
-          their habitats
-          pose immediate and long-term challenges to their survival. As their habitats shrink, leopards face heightened
-          competition for resources and space, resulting in intensified human-leopard conflicts. Additionally, the loss
-          of crucial
-          habitats fragments leopard populations, reducing genetic sectionersity and limiting their ability to adapt to
-          changing
-          environments. This disruption to their natural habitats significantly compromises the leopard's ability to
-          thrive and
-          perpetuates their vulnerability to extinction.
+        <h4 class="threats-headings" id="section8Title" x-text="section8Title" contenteditable="true"></h4>
+        <p class="threats-para" id="section8Text" x-text="section8Text" contenteditable="true">
         </p>
-        <h4 class="threats-headings">Prevention Methods 🛟</h4>
-        <p class="threats-para">
-          Mitigating the threat of habitat loss requires proactive and collaborative measures. Implementing and
-          enforcing
-          stringent regulations against deforestation, land conversion, and habitat degradation are pivotal steps.
-          Conservation
-          initiatives focusing on habitat restoration, reforestation, and protected area management are critical in
-          safeguarding
-          vital leopard habitats. Engaging local communities through education, incentivizing sustainable land-use
-          practices, and
-          fostering coexistence between humans and leopards are essential strategies. Furthermore, promoting
-          landscape-level
-          conservation approaches and establishing wildlife corridors to connect fragmented habitats are crucial steps
-          toward
-          securing the long-term survival of Sri Lankan leopards amidst habitat loss.
+        <h4 class="threats-headings" id="section9Title" x-text="section9Title" contenteditable="true"></h4>
+        <p class="threats-para" id="section9Text" x-text="section9Text" contenteditable="true">
         </p>
       </section>
       <!-- Threat 2 -->
       <section id="trade">
-        <h4 class="threats-headings">Illegal Wildlife Trade Threat ⚠️</h4>
-        <p class="threats-para">
-          The illegal wildlife trade poses a grave threat to the Sri Lankan leopard population. These magnificent
-          creatures face
-          the grim reality of poaching, targeted for their valuable skins, bones, and body parts. This relentless
-          exploitation
-          directly impacts the leopard population, driving them toward endangerment. Moreover, this illicit trade
-          disrupts their
-          natural behaviors and habitats, further exacerbating their vulnerability to extinction. The trade not only
-          poses a
-          direct physical threat to insectionidual leopards but also disturbs the intricate ecological balance within
-          Sri
-          Lanka's
-          ecosystems.
+        <h4 class="threats-headings" id="section10Title" x-text="section10Title" contenteditable="true"></h4>
+        <p class="threats-para" id="section10Text" x-text="section10Text" contenteditable="true">
         </p>
 
-        <h4 class="threats-headings">Consequences 🛑</h4>
-        <p class="threats-para">
-          The consequences of the illegal wildlife trade are dire for Sri Lankan leopards. The persistent poaching
-          activities for
-          leopard parts not only result in a decline in their numbers but also impede the species' ability to thrive in
-          their
-          natural habitats. Furthermore, this trade disrupts the biosectionersity and ecological equilibrium, leading to
-          cascading
-          impacts on the entire ecosystem. The loss of leopards from their ecological roles not only affects their
-          survival but
-          also influences prey populations and ecosystem dynamics, posing long-term consequences for Sri Lanka's natural
-          landscapes.
+        <h4 class="threats-headings" id="section11Title" x-text="section11Title" contenteditable="true"></h4>
+        <p class="threats-para" id="section11Text" x-text="section11Text" contenteditable="true" >
         </p>
 
-        <h4 class="threats-headings">Prevention Methods 🛟</h4>
-        <p class="threats-para">
-          To combat the illegal wildlife trade endangering Sri Lankan leopards, a multifaceted approach is imperative.
-          Strengthening law enforcement and implementing stringent penalties for poachers and traders is essential. This
-          involves
-          concerted efforts to dismantle illegal trading networks through increased surveillance, intelligence
-          gathering, and
-          coordinated enforcement actions. Raising public awareness about the consequences of wildlife trade and
-          fostering
-          community engagement are also crucial elements. Collaboration between law enforcement agencies, wildlife
-          authorities,
-          conservation organizations, and local communities is pivotal in effectively addressing this threat. Measures
-          encompassing educational campaigns, stakeholder involvement, and policy advocacy are integral in curbing this
-          detrimental practice.
+        <h4 class="threats-headings" id="section12Title" x-text="section12Title" contenteditable="true"></h4>
+        <p class="threats-para" id="section12Text" x-text="section12Text" contenteditable="true">
         </p>
       </section>
     </section>
 
     <section class="conserve" id="zoo">
       <section class="conserve-content">
-        <h1 class="shadow">JOURNEY THROUGH CONSERVATION EFFORTS</h1>
+        <h1 class="shadow" id="section13Title" x-text="section13Title" contenteditable="true"></h1>
         <aside class="line"></aside>
-        <p>
-          Embark on a transformative journey through conservation efforts,
-          witnessing the commitment to wildlife preservation. Explore Dehiwala
-          Zoo's conservation programs, educating and advocating for endangered
-          species, promoting awareness and sustainability.
+        <p id="section13Text" x-text="section13Text" contenteditable="true">
         </p>
         <a href="https://nationalzoo.gov.lk/zoo/" class="ctn" target="_blank">Visit Us</a>
       </section>
@@ -280,6 +188,16 @@
               alt="Instagram" /></a>
         </section>
       </section>
+
+      <section class="newsletter-section">
+        <h4>Subscribe to Our Newsletter</h4>
+        <p>Stay updated with our latest news and promotions.</p>
+        <form id="newsletter-form">
+          <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+          <button type="submit" id="subscribe-btn">Subscribe</button>
+        </form>
+      </section>
+
     </section>
     <h5 id="copyright-text">
       © 2004-2024 All Rights Reserved. Created by
@@ -299,6 +217,7 @@
       navlinks.classList.toggle("mobile-menu");
     });
   </script>
+  <script src="JS/homepage.js"></script>
 </body>
 
 </html>

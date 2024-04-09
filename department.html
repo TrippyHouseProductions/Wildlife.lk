@@ -7,11 +7,14 @@
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="CSS/department-style.css" />
   <link rel="stylesheet" href="CSS/animations.css" />
+  <link rel="stylesheet" href="CSS/newsletter-style.css">
   <link rel="icon" type="image/x-icon" href="IMAGES/navfooter-images/mainicon.ico" />
   <title>Wildlife Sri Lanka | DWC</title>
 </head>
 
-<body>
+<script src="//unpkg.com/alpinejs" defer></script>
+
+<body x-data="depbody">
   <nav class="navbar">
     <a href="index.html"><img src="IMAGES/navfooter-images/logo.webp" class="logo" alt="logo" /></a>
     <ul class="nav-links">
@@ -34,89 +37,56 @@
         </ul>
       </li>
       <li><a href="events.html">Events</a></li>
-      <li><a href="contact.html" class="ctn">Contact Us</a></li>
+      <li><a href="login.html" class="ctn">Login</a></li>
     </ul>
     <img src="IMAGES/navfooter-images/menu-btn.webp" class="menu-btn" />
   </nav>
   <main>
     <header id="department-header">
       <section class="header-content">
-        <h2 class="shadow">About Us</h2>
+        <h2 class="shadow" id="subtitle" x-text="subtitle" contenteditable="true"></h2>
         <aside class="line"></aside>
-        <h1 class="shadow">DEPARTMENT OF WILDLIFE CONSERVATION</h1>
+        <h1 class="shadow" id="title" x-text="title" contenteditable="true"></h1>
         <a href="#department-sec2" class="ctn">Scroll</a>
       </section>
     </header>
     <section class="conserve" id="department-sec2">
       <section class="conserve-content">
-        <h1 class="shadow">WHERE WE BEGAN</h1>
+        <h1 class="shadow" id="section1Title" x-text="section1Title" contenteditable="true"></h1>
         <aside class="line"></aside>
-        <p>
-          The conservation efforts in Sri Lanka have a rich history dating
-          back to 1889 when Colonel Clark advocated legislation to halt the
-          exploitation of wildlife resources. This led to the passage of
-          ordinances preventing the export of certain animal hides and
-          imposing duties on firearms. Subsequent years saw the proclamation
-          of reserves like Yala and Wilpattu, aiming for experimental
-          conservation. The Fauna and Flora Protection Ordinance of 1937
-          spurred the identification of wildlife reserves, supported by
-          funding for surveying and protection. In 1949, recognizing the need
-          for a dedicated entity, the Wildlife Department was established.
+        <p id="section1Text" x-text="section1Text" contenteditable="true">
         </p>
       </section>
     </section>
     <section class="protected-areas">
       <section class="title">
-        <h1>PROTECTED AREAS BY THE DWC</h1>
+        <h1 id="section2Title" x-text="section2Title" contenteditable="true"></h1>
         <aside class="line"></aside>
       </section>
 
       <section>
         <figure class="gallery">
           <figcaption class="gallery-item">
-            <img src="IMAGES/department-images/kumana.webp" alt="Protected Area Image 1">
+            <img src="IMAGES/department-images/kumana.webp" alt="Protected Area Image 1" id="image" x-text="image">
             <figcaption>
-              <h4 class="txt-center">Kumana National Park</h4>
-              <p class="txt-center">
-                Located in the southeast corner of Sri Lanka, the 18,149 hectares Kumana National Park is a well-known
-                eco-tourism
-                attraction and bird sanctuary where a multitude of birds breed and roost. Kumana National Park is the
-                eastern sector of
-                Yala National Park. One of the most significant features of the Kumana National Park is the 'Kumana
-                Villu' - a 200
-                hectare natural swamp lake, fed by the 'Kumbukkan Oya' through a half mile long narrow channel.
+              <h4 class="txt-center" id="title" x-text="title" contenteditable="true"></h4>
+              <p class="txt-center" id="description" x-text="description" contenteditable="true">
               </p>
             </figcaption>
           </figcaption>
           <figcaption class="gallery-item">
-            <img src="IMAGES/department-images/singharaja.webp" alt="Protected Area Image 2">
+            <img src="IMAGES/department-images/singharaja.webp" alt="Protected Area Image 2" id="image" x-text="image">
             <figcaption>
-              <h4 class="txt-center">Sinharaja Rain Forest</h4>
-              <p class="txt-center">
-                Sinharaja is a Rain Forest and a biodiversity hotspot which is located in south west lowland wet zone
-                within Sabaragamu
-                and Southern provinces of Sri Lanka. Sinharaja rain forest is the country’s last viable area of primary
-                tropical rain
-                forest. It covers an area of 11,000 Ha of primary and secondary forests. This narrow strip of rolling
-                site comprises of
-                a series of ridges and valleys.
+              <h4 class="txt-center" id="title" x-text="title" contenteditable="true"></h4>
+              <p class="txt-center" id="description" x-text="description" contenteditable="true">
               </p>
             </figcaption>
           </figcaption>
           <figcaption class="gallery-item">
-            <img src="IMAGES/department-images/usangoda.webp" alt="Protected Area Image 3">
+            <img src="IMAGES/department-images/usangoda.webp" alt="Protected Area Image 3" id="image" x-text="image">
             <figcaption>
-              <h4 class="txt-center">Usangooda National Park</h4>
-              <p class="txt-center">
-                Ussangoda National Park is a Sri Lankan national park and designated archaeological site, situated on
-                the Colombo –
-                Kataragama road near Ambalantota – Nonagama Junction in Hambantota District. It is located in the
-                southern sea turtle
-                breeding zones. Ussangoda is a patch of high ground by the sea and spreads over a significant area.
-                Unlike the rest of
-                the land surrounding, it is only covered with grass and a few pockets of pigmy forests. The summit of
-                Ussangoda area
-                pans like a plateau for a significant length.
+              <h4 class="txt-center" id="title" x-text="title" contenteditable="true" ></h4>
+              <p class="txt-center" id="description" x-text="description" contenteditable="true">
               </p>
             </figcaption>
           </figcaption>
@@ -158,7 +128,7 @@
     </section>
     <section id="map-section">
       <section class="title">
-        <h1>LOCATE US</h1>
+        <h1 id="section3Title" x-text="section3Title" contenteditable="true">LOCATE US</h1>
         <aside class="line"></aside>
       </section>
       <iframe
@@ -200,6 +170,16 @@
               alt="Instagram" /></a>
         </section>
       </section>
+
+      <section class="newsletter-section">
+        <h4>Subscribe to Our Newsletter</h4>
+        <p>Stay updated with our latest news and promotions.</p>
+        <form id="newsletter-form">
+          <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+          <button type="submit" id="subscribe-btn">Subscribe</button>
+        </form>
+      </section>
+
     </section>
     <h5 id="copyright-text">
       © 2004-2024 All Rights Reserved. Created by
@@ -220,6 +200,7 @@
       navlinks.classList.toggle("mobile-menu");
     });
   </script>
+  <script src="JS/homepage.js"></script>
 </body>
 
 </html>

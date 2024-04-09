@@ -9,6 +9,7 @@ html {
 :root {
   --main-radius: 15px;
   --main-padding: 5px;
+  --common-width: 80%;
 }
 
 #grid-container {
@@ -27,7 +28,7 @@ html {
 #title,
 #title2 {
   margin-top: 5vh;
-  width: 80%;
+  width: var(--common-width);
   margin: 40px auto;
 }
 

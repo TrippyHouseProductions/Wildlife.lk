@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/newsletter-style.css">
+
+    <title>Wildlife Sri Lanka | Signin & Signup</title>
+</head>
+
+<body id="login-body">
+    <main>
+        <div class="container" id="login-popup">
+            <div class="signin-signup">
+                <!-- Sign-in Form -->
+                <form action="#" class="sign-in-form" id="signin">
+                    <h2 class="login-title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <a href="forgot-password.html" class="forgot-password">Forgot password?</a>
+                    <input type="submit" value="Login" class="btn">
+                    <p class="para">Don't have an account?</p> <a href="#" class="account-text" id="sign-up-link">Sign
+                        up</a>
+                </form>
+                <!-- Sign-up Form -->
+                <form action="#" class="sign-up-form">
+                    <h2 class="login-title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <input type="submit" value="Sign up" class="btn">
+                    <p class="para">Already have an account?</p> <a href="#" class="account-text" id="sign-in-link">Sign
+                        in</a>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Go to top button -->
+    <section id="gotopbtn">
+        <a href="#"><img src="IMAGES/navfooter-images/arrowhead-up.webp" alt="go to top button" /></a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Footer container with sections for contact, quick links, and social media -->
+        <section class="footer-container">
+            <section class="footer-section">
+                <h4>Contact</h4>
+                <p class="footer-para">
+                    Email: contact@slwildlife.com<br />Phone: 077-177-7788
+                </p>
+            </section>
+            <section class="footer-section">
+                <h4>Quick Links</h4>
+                <!-- Quick links to various pages -->
+                <a href="index.html" class="quick-links">Home</a>
+                <a href="introduction.html" class="quick-links">Introduction</a>
+                <a href="department.html" class="quick-links">About Us</a>
+                <a href="leopard.html" class="quick-links">Sri Lankan Leopard</a>
+                <a href="animalgallery.html" class="quick-links">Animals</a>
+                <a href="wilpattu.html" class="quick-links">Wilpattu</a>
+                <a href="yaala.html" class="quick-links">Yala</a>
+                <a href="kumana.html" class="quick-links">Kumana</a>
+                <a href="events.html" class="quick-links">Events</a>
+                <a href="contact.html" class="quick-links">Contact Us</a>
+            </section>
+            <section class="footer-section">
+                <h4>Follow Us</h4>
+                <p class="footer-para">Stay connected on social media.</p>
+                <!-- Social media icons with links -->
+                <section class="social-icons">
+                    <a href="https://facebook.com/" target="_blank"><img
+                            src="IMAGES/navfooter-images/facebook-icon.webp" alt="Facebook" /></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="IMAGES/navfooter-images/twitter-icon.webp"
+                            alt="Twitter" /></a>
+                    <a href="https://instagram.com/" target="_blank"><img
+                            src="IMAGES/navfooter-images/instagram-icon.webp" alt="Instagram" /></a>
+                </section>
+            </section>
+
+            <section class="newsletter-section">
+                <h4>Subscribe to Our Newsletter</h4>
+                <p>Stay updated with our latest news and promotions.</p>
+                <form id="newsletter-form">
+                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" id="subscribe-btn">Subscribe</button>
+                </form>
+            </section>
+
+        </section>
+
+        <!-- Copyright text with link to creator's contact -->
+        <h5 id="copyright-text">
+            © 2004-2024 All Rights Reserved. Created by
+            <a href="http://wa.me/+94751229892" target="_blank">
+                Hirusha Gunasena.
+            </a>
+        </h5>
+        <!-- References:
+        - Smith, John. "The Beauty of Wildlife." National Geographic, 2023.
+        - Wildlife Conservation Society. "Exploring Sri Lankan Biodiversity.
+        - Wikipedia.
+        - Sri Lankan wildlife conservation department
+        - Youtube -->
+    </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        const menubutton = document.querySelector(".menu-btn");
+        const navlinks = document.querySelector(".nav-links");
+        menubutton.addEventListener("click", () => {
+            navlinks.classList.toggle("mobile-menu");
+        });
+    </script>
+    <script src="JS/homepage.js"></script>
+    <script src="JS/login.js"></script>
+</body>
+
+</html>
