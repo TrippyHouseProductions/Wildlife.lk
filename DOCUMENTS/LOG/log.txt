@@ -1,0 +1,70 @@
+ERRORS TO BE FIXED
+
+1.remove all the spaces between tags in html pages. DONE
+2.make all the values rem or vmin.
+3.add all the html pages in one folder. DONE
+4.add all the image folders in one folder. DONE
+5.add alt text for images.
+6.add sementic tags for each page (main tag). DONE
+7.make the text center oriented in mobile view. DONE
+
+
+THINGS TO DO
+
+1.create and setting up Github repostropies to host the webpage DONE
+2.creating the wireframes DONE
+3.add a preloader animation
+
+
+CHALLENGES FACED
+
+1.maintaining the neatness of webpage as well as the workspace
+2.seperation of common codes and unique codes according to each webpage
+3.making the webpage responsive
+
+
+WEBSITE OVERVIEW
+
+Webpages and respective sections and how it is linked throughout the website.
+Sections or webpages which aren't over are highlighted in RED
+
+1.Homepage
+    -Welcome section
+    -Upcoming events section
+        -Yaala safari => Yaala page
+        -Kumana bird watching => Kumana page
+    -Conserve wildlife section
+        -Learn more =>NEED TO LINK SOMEWHERE
+    -Upcoming conservations section
+        -Learn more => Upcoming events > conservations section
+    -Footer
+
+2.About us
+    -Welcome section
+        -Learn more button => Scroll down to history section
+    -History section
+    -Footer
+
+3.Sri lankan leopard
+
+4.Animal gallery
+    -Welcome section
+    -Animal gallery section
+        -Slideshow
+    -Journey of conservations
+        -Visit us => Dehivala zoo page
+    -Footer
+
+5.Wilpattu
+
+6.Yaala
+
+7.Kumana
+
+8.Events
+    -Conservation events
+    -Park Visits
+
+9.Contact us
+    -Contact form
+    -Footer
