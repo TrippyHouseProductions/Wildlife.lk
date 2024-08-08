@@ -1,4 +1,4 @@
-# [Wildlife.lk]([https://trippyhouseproductions.github.io/Wildlife.lk/])
+# [Wildlife.lk]([https://trippyhouseproductions.github.io/Wildlife.lk/index.html])
 
 ---
 
