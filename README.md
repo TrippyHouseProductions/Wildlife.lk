@@ -12,11 +12,11 @@ Our mission is to raise awareness about the diverse flora and fauna of Sri Lanka
 
 ## Features
 
-**Interactive Maps:** Explore wildlife habitats through interactive maps that provide information about various regions.
-**Photo Gallery:** View stunning images of wildlife captured by photographers and contributors.
-**User Accounts:** Register and log in to access personalized content and updates.
-**Event Section:** Stay informed with articles and news about conservation efforts and wildlife protection.
-**Contact Form:** Reach out to us directly through our easy-to-use contact form
+- **Interactive Maps:** Explore wildlife habitats through interactive maps that provide information about various regions.
+- **Photo Gallery:** View stunning images of wildlife captured by photographers and contributors.
+- **User Accounts:** Register and log in to access personalized content and updates.
+- **Event Section:** Stay informed with articles and news about conservation efforts and wildlife protection.
+- **Contact Form:** Reach out to us directly through our easy-to-use contact form
 
 ## Admin Credentials
 
