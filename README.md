@@ -1,4 +1,4 @@
-# [Wildlife.lk]([https://trippyhouseproductions.github.io/Wildlife.lk/index.html])
+# [Wildlife.lk](https://trippyhouseproductions.github.io/Wildlife.lk/index.html)
 
 ---
 
@@ -10,9 +10,32 @@ Welcome to our Sri Lankan Wildlife Conservation Website project! We're passionat
 
 Our mission is to raise awareness about the diverse flora and fauna of Sri Lanka. From the majestic elephants roaming the plains to the colorful bird species in the tropical forests, we strive to highlight the beauty and importance of these natural treasures.
 
+## Features
+
+**Interactive Maps:** Explore wildlife habitats through interactive maps that provide information about various regions.
+**Photo Gallery:** View stunning images of wildlife captured by photographers and contributors.
+**User Accounts:** Register and log in to access personalized content and updates.
+**Event Section:** Stay informed with articles and news about conservation efforts and wildlife protection.
+**Contact Form:** Reach out to us directly through our easy-to-use contact form
+
+## Admin Credentials
+
+For demonstration purposes, you can use the following credentials to log in as an admin and view user information:
+
+- **Username:** admin
+- **Password:** admin123
+
+## Screenshots
+
+Here are some screenshots showcasing our website's features and design:
+
+### Homepage
+### Interactive Map
+### Photo Gallery
+
 ## Contact Us
 
-Feel free to reach out to us for inquiries, collaborations, or any questions related to our conservation efforts.
+Feel free to reach out to us for inquiries, collaborations, or any questions related to our work.
 
 - **Email:** [hirushagunasena@gmail.com](mailto:hirushagunasena@gmail.com)
 - **Whatsapp:** [@Hirusha Gunasena](https://wa.me/+94751229892)
