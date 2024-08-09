@@ -23,7 +23,7 @@ Our mission is to raise awareness about the diverse flora and fauna of Sri Lanka
 Here are some resources that provide more information about the design and planning of our website:
 
 - **Wireframes:** [View Wireframes](DOCUMENTS/REPORT/wireframes-testing-file.pdf)
-- **Project Brief:** [View Project Brief](DOCUMENTS/REPORT/ProjectBrief.pdf) 
+- **Project Brief:** [View Project Brief](DOCUMENTS/REPORT/Project-Brief.pdf) 
 
 ## Admin Credentials
 
