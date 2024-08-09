@@ -18,6 +18,13 @@ Our mission is to raise awareness about the diverse flora and fauna of Sri Lanka
 - **Event Section:** Stay informed with articles and news about conservation efforts and wildlife protection.
 - **Contact Form:** Reach out to us directly through our easy-to-use contact form
 
+## Project Resources
+
+Here are some resources that provide more information about the design and planning of our website:
+
+- **Wireframes:** [View Wireframes](DOCUMENTS/REPORT/wireframes-testing-file.pdf)
+- **Project Brief:** [View Project Brief](DOCUMENTS/REPORT/ProjectBrief.pdf) 
+
 ## Admin Credentials
 
 For demonstration purposes, you can use the following credentials to log in as an admin and view user information:
